@@ -1,8 +1,10 @@
-function capitalise(word) {
-  word[0] = word[0].toUpperCase();
-  return word;
-}
 
+function capitalise(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
+console.log(capitalise("hello"))
+console.log(capitalise("john"))
+capitalise("WORLD");
 // I recommend you start by calling capitalise with the string "hello"
 
 // Advanced hint: When you've called the function with a string, you can also run this file with a runtime called bun (just run bun <path-to-file>)
